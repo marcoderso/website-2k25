@@ -1,4 +1,4 @@
-import { fragmentOn } from "basehub"
+import { fragmentOn } from "@/service/basehub"
 
 export const query = fragmentOn("Query", {
   pages: {

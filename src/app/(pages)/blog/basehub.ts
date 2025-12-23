@@ -1,6 +1,4 @@
-import { fragmentOn } from "basehub"
-
-import { client } from "@/service/basehub"
+import { client, fragmentOn } from "@/service/basehub"
 
 const HeroFragment = fragmentOn("HeroComponent", {
   heroVideo: {

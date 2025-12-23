@@ -1,4 +1,4 @@
-import { fragmentOn } from "basehub"
+import { fragmentOn } from "@/service/basehub"
 
 import { IMAGE_FRAGMENT } from "@/service/basehub/fragments"
 

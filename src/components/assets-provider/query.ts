@@ -1,4 +1,4 @@
-import { fragmentOn } from "basehub"
+import { fragmentOn } from "@/service/basehub"
 
 import {
   arcadeFragment,
