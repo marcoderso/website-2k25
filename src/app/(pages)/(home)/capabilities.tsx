@@ -19,7 +19,7 @@ export const Capabilities = ({ data }: { data: QueryType }) => {
 
       <div className="grid-layout relative col-span-full mt-16 !px-0">
         <div className="col-start-1 col-end-11 grid grid-cols-2 gap-x-3 gap-y-8 lg:col-start-2 lg:grid-cols-8 2xl:col-start-3">
-          {categories.map((c) => (
+          {categories.map((c: { _title: string; description: string; subCategories: { items: { _title: string }[] } }) => (
             <div
               key={c._title}
               className="col-span-1 mt-1.25 flex flex-col gap-y-6 text-brand-w1 lg:col-span-2"
@@ -37,7 +37,7 @@ export const Capabilities = ({ data }: { data: QueryType }) => {
               </p>
 
               <div className="flex flex-wrap gap-1">
-                {c.subCategories.items.map((s) => (
+                {c.subCategories.items.map((s: { _title: string }) => (
                   <p
                     key={s._title}
                     title={s._title}
